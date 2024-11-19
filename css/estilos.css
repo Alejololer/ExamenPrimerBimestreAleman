@@ -65,6 +65,7 @@ h4{
     border-radius: 50%;
     color: #176FA6;
     background-color: white;
+    font-family: 'SF UI Display';
 }
 
 nav ul{
@@ -77,6 +78,7 @@ nav ul li{
     padding: 10px;
     color: white;
     text-transform: uppercase;
+    font-family: 'Montserrat';
 }
 
 #Contenido{
