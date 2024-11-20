@@ -6,59 +6,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link href="css/estilos.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="css/estilos.css" rel="StyleSheet" type="text/css" media="screen">
 </head>
 
 <body>
     <header>
-        <nav class="flex align-center bg-primary p-10">
-            <div id="logo" class="bg-white text-primary border-radius-50 p-10">PA</div>
-            <ul class="flex align-center list-none ml-auto">
-                <li class="p-10 text-uppercase"><a href="#" class="text-white">Inicio</a></li>
-                <li class="p-10 text-uppercase"><a href="#" class="text-white">Resumen</a></li>
-                <li class="p-10 text-uppercase"><a href="#" class="text-white">Publicaciones</a></li>
-                <li class="p-10 text-uppercase"><a href="#" class="text-white">Proyectos</a></li>
+        <nav>
+            <div id="logo">PA</div>
+            <ul class="ft-normal">
+                <li><a>Inicio</a></li>
+                <li><a>Resumen</a></li>
+                <li><a>Publicaciones</a></li>
+                <li><a>Proyectos</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="flex">
-        <article id="Nombre-Foto" class="flex flex-column align-center p-top-10" style="width: 50%;">
+    <section id="Contenido">
+        <article id="Nombre-Foto">
             <h2>Pedro Alcívar</h2>
-            <div class="rounded" style="height:400px; width:400px; background-image: url(./img/investigador.jpg); background-repeat: no-repeat; background-position: center; background-size: cover;"></div>
+            <div class="rounded"
+                style="height:400px;width:400px;background-image: url(./img/investigador.jpg); background-repeat: no-repeat;  background-position: 50%; background-size: 100% auto; margin:0px auto;">
+            </div>
         </article>
-        <article id="Detalles" class="flex flex-column p-top-10" style="width: 50%; padding-right: 10px;">
-            <h3>BIOGRAFÍA</h3>
-            <p class="p-lr-10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-            <div class="text-italic text-align-right p-10">ver más...</div>
+        <article id="Detalles">
+            <h3>BIOGRAFIA</h3>
+            <p class="ft-normal">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+            </p>
+            <div class="vermas">ver mas...</div>
 
             <h3>HABILIDADES</h3>
-            <div class="flex align-center p-top-10 flex-gap">
-                <div class="border-primary border-radius-15 p-10">Diseño de Interacción</div>
-                <div class="border-primary border-radius-15 p-10">Desarrollo Web</div>
-                <div class="border-primary border-radius-15 p-10">Diseño UI/UX</div>
+            <div id="Hab-Container">
+                <div class="habilidad ft-normal">Diseño de Interacción</div>
+                <div class="habilidad ft-normal">Desarrollo Web</div>
+                <div class="habilidad ft-normal">Diseño UI/UX</div>
             </div>
-
             <h3>PORTAFOLIO</h3>
-            <div class="flex justify-between flex-wrap">
+            <div id="Card-Container">
+
                 <div class="card">
-                    <img src="https://picsum.photos/id/180/180/180" alt="Diseño Web">
+                    <img src="https://picsum.photos/id/180/180/180">
                     <h4>Diseño Web</h4>
-                    <p class="p-lr-10">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    <div class="text-italic text-align-right p-10">ver más...</div>
+                    <p class="ft-normal pd-lr-10">Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. </p>
+                    <div class="vermas">ver mas...</div>
                 </div>
                 <div class="card">
-                    <img src="https://picsum.photos/id/1/180/180" alt="Desarrollo Web">
+                    <img src="https://picsum.photos/id/1/180/180">
                     <h4>Desarrollo Web</h4>
-                    <p class="p-lr-10">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    <div class="text-italic text-align-right p-10">ver más...</div>
+                    <p class="ft-normal pd-lr-10">Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. </p>
+                    <div class="vermas">ver mas...</div>
                 </div>
                 <div class="card">
-                    <img src="https://picsum.photos/id/20/180/180" alt="Diseño UX">
+                    <img src="https://picsum.photos/id/20/180/180">
                     <h4>Diseño UX</h4>
-                    <p class="p-lr-10">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    <div class="text-italic text-align-right p-10">ver más...</div>
+                    <p class="ft-normal pd-lr-10">Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. </p>
+                    <div class="vermas">ver mas...</div>
                 </div>
+
             </div>
         </article>
     </section>
