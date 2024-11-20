@@ -1,12 +1,3 @@
-/* Estilos base y variables */
-:root {
-    --primary-color: #176FA6;
-    --secondary-color: #707070;
-    --font-family-sf: 'SF UI Display', sans-serif;
-    --font-family-montserrat: 'Montserrat', sans-serif;
-}
-
-/* Fuentes */
 @font-face {
     font-family: 'SF UI Display';
     src: url('../fonts/sf-ui-display-light.otf') format('opentype');
@@ -17,176 +8,133 @@
     src: url('../fonts/Montserrat-Bold.otf') format('opentype');
 }
 
-/* Estilos globales */
-* {
-    margin: 0;
-    padding: 0;
+*{
+    margin: 0 0;
+    padding: 0 0;
     box-sizing: border-box;
 }
 
-body {
-    font-family: var(--font-family-montserrat);
-    color: var(--secondary-color);
-}
-
-/* Contenedores principales */
-.container {
+nav{
     display: flex;
-    gap: 20px;
-}
-
-.container-column {
-    display: flex;
-    flex-direction: column;
-}
-
-.container-center {
-    display: flex;
-    justify-content: center;
     align-items: center;
+    background-color: #176FA6;
+    padding: 10px 0px 10px;
 }
 
-/* Encabezados */
-h2 {
-    font-family: var(--font-family-montserrat);
+h2{
+    font-family: 'Montserrat';
     font-size: 70px;
-    color: var(--primary-color);
+    color: #176FA6;
     text-align: center;
 }
 
-h3, h4 {
-    font-family: var(--font-family-montserrat);
+h3, h4{
+    font-family: 'Montserrat';
+    color: #707070;
 }
 
-h3 {
+h3{
     font-size: 18px;
-    padding: 10px 0;
+    padding: 10px 0px 10px 0px;
 }
 
-h4 {
+h4{
     font-size: 14px;
-    padding: 10px;
+    padding: 10px 10px 10px 10px;
 }
 
-/* Estilos de texto */
-.text-primary {
-    color: var(--primary-color);
+.ft-normal, .vermas{
+    font-family: 'SF UI Display';
+    font-weight: 100;
+    font-size: 14px;
 }
 
-.text-secondary {
-    color: var(--secondary-color);
+.pd-lr-10{
+    padding: 0px 10px 0px 10px;
 }
 
-.text-italic {
+.vermas{
+    display:block;
+    text-align: right;
     font-style: italic;
+    padding: 10px 0px;
 }
 
-/* Estilos de márgenes y paddings */
-.p-10 {
+#logo{
     padding: 10px;
+    border-radius: 50%;
+    color: #176FA6;
+    background-color: white;
+    font-family: 'SF UI Display';
 }
 
-.p-lr-10 {
-    padding-left: 10px;
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li{
+    padding: 10px;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+}
+
+#Contenido{
+    display: flex;
+}
+
+#Nombre-Foto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    width: 50%;
+}
+
+.rounded{
+    border-radius: 50%;
+}
+
+#Detalles{
+    display:flex;
+    flex-direction: column;
+    padding-top: 10px;
+    width: 50%;
     padding-right: 10px;
 }
 
-.p-top-10 {
-    padding-top: 10px;
-}
-
-.m-0 {
-    margin: 0;
-}
-
-.m-auto {
-    margin: auto;
-}
-
-/* Fondo y bordes */
-.bg-primary {
-    background-color: var(--primary-color);
-}
-
-.bg-white {
-    background-color: white;
-}
-
-.border-primary {
-    border: 1px solid var(--primary-color);
-}
-
-.border-radius-50 {
-    border-radius: 50%;
-}
-
-.border-radius-15 {
-    border-radius: 15px;
-}
-
-/* Estilos de elementos */
-.rounded {
-    border-radius: 50%;
-}
-
-.img-cover {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.text-uppercase {
-    text-transform: uppercase;
-}
-
-.text-align-right {
-    text-align: right;
-}
-
-.text-align-center {
-    text-align: center;
-}
-
-.flex {
+#Hab-Container{
     display: flex;
-}
-
-.flex-column {
-    flex-direction: column;
-}
-
-.flex-center {
-    justify-content: center;
     align-items: center;
-}
-
-.flex-wrap {
-    flex-wrap: wrap;
-}
-
-.flex-gap {
+    padding-top: 10px;
     gap: 10px;
 }
 
-/* Tarjetas */
-.card {
+.habilidad{
+    border: 1px solid #176FA6;
+    border-radius: 15px;
+    padding: 10px 10px;
+}
+
+#Card-Container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card{
     width: 182px;
     border: 1px solid black;
-    border-radius: 0 0 15px 15px;
+    border-radius: 0px 0px 15px 15px;
     flex-shrink: 0;
 }
 
-.card img {
-    width: 100%;
-    border-bottom: 1px solid black;
-}
 
-/* Botones y enlaces */
-a {
-    color: inherit;
-    text-decoration: none;
-}
 
-a:hover {
-    text-decoration: underline;
-}
+
+
+
+
+
