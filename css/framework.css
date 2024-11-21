@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'SF UI Display';
+    src: url('../fonts/sf-ui-display-light.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Bold.otf') format('opentype');
+}
+
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-uppercase { text-transform: uppercase; }
+.text-italic { font-style: italic; }
+
+.heading-primary {
+    font-family: 'Montserrat';
+    font-size: 70px;
+    color: #176FA6;
+}
+
+.heading-secondary {
+    font-family: 'Montserrat';
+    font-size: 18px;
+    color: #707070;
+    padding-bottom: 10px;
+}
+
+.heading-tertiary {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    color: #707070;
+}
+
+.text-normal {
+    font-family: 'SF UI Display';
+    font-weight: 100;
+    font-size: 14px;
+}
+
+.flex { display: flex; }
+.flex-column { flex-direction: column; }
+.flex-wrap { flex-wrap: wrap; }
+.items-center { align-items: center; }
+.justify-between { justify-content: space-between; }
+.w-50 { width: 50%; }
+
+.p-10 { padding: 10px; }
+.py-10 { padding-top: 10px; padding-bottom: 10px; }
+.px-10 { padding-left: 10px; padding-right: 10px; }
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #176FA6;
+    padding: 10px 0;
+}
+
+.navbar-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar-item {
+    padding: 10px;
+    color: white;
+}
+
+.logo {
+    padding: 10px;
+    border-radius: 50%;
+    color: #176FA6;
+    background-color: white;
+    font-family: 'SF UI Display';
+}
+
+.skill-tag {
+    border: 1px solid #176FA6;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.card {
+    width: 182px;
+    border: 1px solid black;
+    border-radius: 0 0 15px 15px;
+    flex-shrink: 0;
+}
+
+.circle-image {
+    border-radius: 50%;
+}
+
+.skill-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
